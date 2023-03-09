@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <span class="heading" id="head">Dhun</span>
+    <div class="main">
+        <div class="contain ">
+            <div class="sign">
+                <p class="content">Sign up for free to start listening.</p><button class="btn_sign"
+                    onclick="sign()">Sign up</button>
+            </div>
+            <div class="log">
+                <p class="content">To continue,log in to Dhun.</p><button class="btn_log" onclick="log()">Login</button>
+                <div></div>
+            </div>
+        </div>
+
+        <div class="board">
+            <div class="container main_form  currrent" id="sb">
+
+                <form  class=" sign_form "onsubmit="return false">
+                    <div class="title">Sign in</div>
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
+                        <small id="nameHelp" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group">
+
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        <small id="emailHelp" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group">
+
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+                        <small id="passHelp" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group">
+
+                        <input type="password" class="form-control" id="cpwd" placeholder="Enter password again"
+                            name="pwd">
+                        <small id="cpassHelp" class="form-text text-muted"></small>
+                    </div>
+                    <button class="sign_bt " onclick=" return validat()">Submit</button>
+                </form>
+            </div>
+            <div class="container main_form form_visible" id="lb">
+
+                <form  class=" login_form" onsubmit="return false">
+                    <div class="title">Log in</div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="l_name" placeholder="Enter name" name="name">
+                        <small id="lnameHelp" class="form-text text-muted"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="l_pwd" placeholder="Enter password" name="pwd">
+                        <small id="lpassHelp" class="form-text text-muted" style="color: red;"> </small>
+                    </div>
+
+
+                    <button type="submit" class="sign_bt" onclick="lvalidateForm()">Submit</button>
+
+
+
+                </form>
+            </div>
+        </div>
+        <div class="or">or</div>
+        <div class="other">
+            <button class="fb"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-facebook fbb" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg> Sign up with Facebook</button>
+            <button class="gg">Sign up with Google </button>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

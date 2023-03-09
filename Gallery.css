@@ -1,0 +1,176 @@
+/* hide scrollbar  */
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+
+* {
+    scroll-behavior: smooth;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.flex img {
+    margin-left: 0.37rem;
+    height: 5rem;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+
+}
+
+.image img:hover {
+    filter: none;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-right: 0.5rem;
+    flex-direction: row-reverse;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.text {
+    font-size: 1.1rem;
+    color: white;
+    margin: 1rem 0.25rem;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+}
+
+.text:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1{
+    padding-top: 8rem;
+    margin-bottom: 2rem;
+    font-family: 'Dancing Script';
+    font-size: 6rem;
+    text-align: center;
+}
+
+.container {
+    background-image: url(Images/Gallerybg1.jpg);
+    background-size: cover;
+    background-position: center/c;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.container img {
+    margin: 1rem;
+    height: 20rem;
+    transition: transform 1s;
+}
+
+.container img:hover {
+    transform: scale(1.25);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Contactus{
+    padding-top: 1rem;
+    background-color: rgb(226, 225, 220);
+  }
+  
+  #Contactus #logo{
+    width: 5rem;
+    display: block;
+    margin: auto;
+  }
+  
+  #Contactus p{
+    text-align: center;
+    font-family: "Dancing Script";
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  
+  #Contactus div{
+    text-align: center;
+    font-family:'Ubuntu';
+    font-weight: bold;
+    font-size: 0.85rem;
+  }
+  
+  #Contactus img{
+    width: 1rem;
+    margin: 0.75rem 0.5rem;
+  }
+  
+  #Contactus .Social{
+    margin: auto;
+  }
+  
+  .Social img:hover{
+    transform: scale(1.5);
+  }
+  
+  #copyright{
+    color: whitesmoke;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+   #copyright span{
+    text-decoration: underline;
+   }
